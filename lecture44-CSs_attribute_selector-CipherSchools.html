@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        input[type="text"]{
+            color:red;
+            background-color:pink;
+
+        }
+        a[href *="google"]{
+            color:green;
+        }
+        a[href^="https"]{
+            color:orange;
+        }
+        a[href=".com"]{
+            color:black;
+        }
+        input[type^="t"]{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Links</h2>
+    <a href="#">google India</a><br>
+    <a href="#">google UK</a><br>
+    <a href="#">Flipkart</a><br>
+    <a href="#">FaceBook</a><br>
+    <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+        <p>
+        <label>Name
+        <input type="text" name="customer_name" required>
+        </label> 
+        </p>
+        
+        <p>
+        <label>Phone 
+        <input type="tel" name="phone_number">
+        </label>
+        </p>
+        
+        <p>
+        <label>Email 
+        <input type="email" name="email_address">
+        </label>
+        </p>
+        
+        <fieldset>
+        <legend>Which taxi do you require?</legend>
+        <p><label class="choice"> <input type="radio" name="taxi" required value="car"> Car </label></p>
+        <p><label class="choice"> <input type="radio" name="taxi" required value="van"> Van </label></p>
+        <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+
+    
+</body>
+</html>
